@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Recipe</title>
+    <!-- Using JS file -->
+    {% load static %}
+    <script src="{% static 'js/add_recipe.js' %}"></script>
+
+    </head>
+<body>
+    <h2 id="header">Add Recipe</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Recipe</button>
+    </form>
+</body>
+</html>

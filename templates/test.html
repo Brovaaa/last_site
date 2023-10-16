@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Pagination</title>
+  {% load static %}
+    <script src="{% static 'js/test.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css">
+    <!-- Next line is JQUERY to use $ajax/fetch to fetch recipe data -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1>JSON Pagination</h1>
+<button id="sort-id">Sort by title</button>
+    <div class="content">
+
+        <div id="recipe-container"></div>
+        <div id="shoplist"></div>
+
+    </div>
+<button id="submit-list">Submit</button>
+
+          <div id="pagination-container">
+              <ul id="item-list">
+                  <div id="img-container"></div>
+              </ul>
+              <div id="pagination-controls"></div>
+          </div>
+
+
+
+</body>
+</html>
